@@ -187,8 +187,8 @@ def user_stats(df):
 
     # TO DO: Display earliest, most recent, and most common year of birth
     try:
-        earlier_birth_year = df['Birth Year'].min()
-        print("earlier_birth_year: ", earlier_birth_year)
+        earliest_birth_year = df['Birth Year'].min()
+        print("earliest_birth_year: ", earliest_birth_year)
     except KeyError:
         print("No birth year data available for the city of Washington.")
     
