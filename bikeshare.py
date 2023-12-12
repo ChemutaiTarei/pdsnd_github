@@ -136,7 +136,7 @@ def station_stats(df):
     print("popular_end_station is: ", popular_end_station)
 
     # TO DO: display most frequent combination of start station and end station trip
-    
+
     # Group the data by start station and end station and count the occurrences
     station_combinations = df.groupby(['Start Station', 'End Station'])['Start Station'].count()
     # Find the most frequent combination of start and end stations
@@ -211,6 +211,8 @@ def user_stats(df):
 
 
 def display_raw_data(df):
+    """"  displays 5 lines of raw data from a DataFrame """
+    
     row_index = 0
     while True:
         show_raw_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
