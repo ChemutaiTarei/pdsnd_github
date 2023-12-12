@@ -179,8 +179,8 @@ def user_stats(df):
 
     # TO DO: Display counts of gender
     try:
-        gender_counts = df['Gender'].value_counts()
-        print("Gender Counts:\n", gender_counts)
+        gender_count = df['Gender'].value_counts()
+        print("Gender Counts:\n", gender_count)
     except KeyError:
         print("No gender data available for the city of Washington.")
     
